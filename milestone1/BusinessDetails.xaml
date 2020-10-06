@@ -1,0 +1,42 @@
+﻿<Window x:Class="milestone1.BusinessDetails"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:milestone1"
+        mc:Ignorable="d"
+        Title="Business Details" Height="581.826" Width="851">
+    <Grid Margin="0,0,23,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Business Name" HorizontalAlignment="Left" Margin="47,66,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Height="26" Width="90"/>
+        <Label Content="State" HorizontalAlignment="Left" Margin="47,97,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" RenderTransformOrigin="0.568,-0.731" Height="26" Width="37"/>
+        <Label Content="City" HorizontalAlignment="Left" Margin="47,128,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.3,0.833" Grid.ColumnSpan="2" Height="26" Width="30"/>
+        <TextBox x:Name="bname" HorizontalAlignment="Left" Height="23" Margin="172,69,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="282" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="state"  Height="23" Margin="172,100,366,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="city" HorizontalAlignment="Left" Height="23" Margin="172,131,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="282" Grid.ColumnSpan="2"/>
+        <Label Content="Number of Businesses in the same city:" HorizontalAlignment="Left" Margin="47,295,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.3,0.833" Grid.ColumnSpan="2" Height="26" Width="216"/>
+        <Label Content="Number of Businesses in the same state:" HorizontalAlignment="Left" Margin="47,321,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.3,0.833" Grid.ColumnSpan="2" Height="26" Width="223"/>
+        <Label x:Name="numInCity" Content="_______" HorizontalAlignment="Left" Margin="318,295,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Height="26" Width="30"/>
+        <Label x:Name="numInState" Content="_______" HorizontalAlignment="Left" Margin="318,321,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Height="26" Width="30"/>
+        <Label x:Name="numberOfTips" Content="number of tips" HorizontalAlignment="Left" Margin="47,352,0,0" VerticalAlignment="Top" Width="90" Grid.ColumnSpan="2" Height="26"/>
+        <Label x:Name="numOfTip" Content="_______" HorizontalAlignment="Left" Margin="318,352,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Height="26" Width="30"/>
+        <TextBox x:Name="TipText" HorizontalAlignment="Left" Height="83" Margin="172,394,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="282" TextChanged="TipText_TextChanged" TextInput="TipText_TextInput" Grid.ColumnSpan="2"/>
+        <Label x:Name="Tip" Content="Add a Tip!" HorizontalAlignment="Left" Margin="47,394,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.342,0.538" Grid.ColumnSpan="2" Height="26" Width="64"/>
+        <Button x:Name="SubmitButton" Content="Submit" HorizontalAlignment="Left" Margin="379,499,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click" Grid.Column="1" Height="20"/>
+        <Label x:Name="Address" Grid.ColumnSpan="2" Content="Address" HorizontalAlignment="Left" Margin="47,159,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="address" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="23" Margin="172,163,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="282"/>
+        <Label x:Name="CurrentDay" Grid.ColumnSpan="2" Content="Today:" HorizontalAlignment="Left" Margin="47,195,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="currentDay" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="23" Margin="172,195,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="OpenTime" Grid.ColumnSpan="2" Content="Opens at:" HorizontalAlignment="Left" Margin="47,226,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="CloseTime" Grid.ColumnSpan="2" Content="Closes at:" HorizontalAlignment="Left" Margin="47,257,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="openTime" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="23" Margin="172,230,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="closeTime" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="23" Margin="172,261,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="BusinessCategory" Grid.ColumnSpan="2" Content="Business Categories" HorizontalAlignment="Left" Margin="592,31,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.991,0.654"/>
+        <ListBox x:Name="businessCategory" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="215" Margin="548,69,0,0" VerticalAlignment="Top" Width="205"/>
+
+    </Grid>
+</Window>
